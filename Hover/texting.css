@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hover-img{
+    overflow: hidden;
+}
+.main-img-text{
+    overflow: hidden;
+}
+.main-img-text{
+    color: white;
+}
+.top-border{
+    position: absolute;
+    background: rgb(0, 96, 175);
+    height: 30px;
+    width: 546px;
+    top: 0%;
+    left: 0px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    z-index: 1;
+}
+.testing{
+    position: relative;
+    overflow: hidden;
+    border-radius: 0px 0px 20px 20px;
+}
+.fa-building{
+    font-size: 40px;
+}
+.text-img{
+    position: relative;
+    background: rgba(0,0,0,0.5) url(image\ 2.jpg);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px 0px 20px 20px;
+    transition: 2s;
+    overflow: hidden;
+    padding: 0px 40px 0px 40px;
+}
+.text-img:hover{
+    padding-bottom: 0px;
+    scale: 1.1 ;
+}
+.icon-text{
+    padding: 40px 0px 0px 0px;
+    transition: 1s;
+}
+.text-img:hover .icon-text{
+    padding: 80px 0px 100px 20px;
+}
+.link{
+    padding-bottom: 30px;
+    display: none;
+    color: yellow;
+    font-weight: 500;
+    transition: 1s;
+    align-content: space-between;
+    }
+    .text-img:hover .link{ 
+        display: block;
+        padding-left: 20px;
+    }
+.text{
+    position: relative;
+    display: none;
+    transition: 1s;
+}
+.text-img:hover .text{
+    display: block;
+    padding-left: 20px;
+}
+.text-img .text p{
+    position: relative;
+    margin-top: -200px;
+    left: 0;
+    transition: 1s;
+    padding-top: 200px;
+}
+.text-animation {
+    position: relative;
+  animation-name: text-animation;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+@keyframes text-animation{
+  from { top:0px; opacity: 0.4; }
+  to  { bottom:0px;}
+}
